@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Etch a Sketch</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js" defer></script>
+
+    </head>
+    <body>
+        <header class="header">Etch-a-sketch</header>
+        <div class="container">
+            <div id="one" class="options">
+                <div class="classic">
+                    <input type="color" id="myColor" value="#000000">
+                    <button class="button normal">NORMAL</button>
+                </div>
+                <button class="button rainbow">RAINBOW</button>
+                <button class="button scale">GRAY SCALE</button>
+                <button class="button eraser">ERASER</button>
+            </div>
+            <div class="board">
+            </div>
+            <div id="two" class="options">
+                <button class="button lines">GRID LINES</button>
+                <button class="button clear">CLEAR</button>
+                <div class="slider">
+                    <input type="range" min="1" max="100" value="16" oninput="rangeValue.innerText = this.value">
+                    <span id="rangeValue">16</span>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">Copyright &copy; 2023 Tiberiw <i class="fa fa-github" style="font-size:24px"></i></footer>
+    </body>
+</html>
